@@ -229,7 +229,7 @@ img {
     text-align: center;
 }
 
-.card {
+.movie-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,11 +237,11 @@ img {
     padding: 0;
 }
 
-.card-poster {
+.movie-poster {
     margin-bottom: 10px;
 }
 
-.card-table, .order-table {
+.movie-table, .order-table {
     margin: 0 0 10px 0;
     width: 100%;
 }
@@ -250,7 +250,7 @@ img {
     margin-bottom: 0;
 }
 
-.card-table tr, .order-table tr {
+.movie-table tr, .order-table tr {
     border-bottom: 1px solid rgba(48, 71, 94, 0.6);
 }
 
@@ -267,7 +267,7 @@ img {
     justify-content: center;
 }
 
-.booking-seats__date, .booking-seats__city, .booking-seats__row {
+.booking-date, .booking-city, .booking-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -276,25 +276,25 @@ img {
     width: 100%;
 }
 
-.booking-seats__row {
+.booking-row {
     flex-wrap: nowrap;
 }
 
-.booking-seats__label {
+.booking-label {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.booking-seats__date .booking-seats__label {
+.booking-date .booking-label {
     flex-wrap: wrap;
 }
 
-.booking-seats__city .booking-seats__label {
+.booking-city .booking-label {
     width: 45%
 }
 
-.date-input, .time-input {
+.booking-input__date, .booking-input__time {
     display: block;
     padding: 10px;
     border: 1px solid rgba(240, 84, 84, 0.6);
@@ -302,16 +302,16 @@ img {
     cursor: pointer;
 }
 
-.date-input:hover, .time-input:hover {
+.booking-input__date:hover, .booking-input__time:hover {
     border-color: rgba(240, 84, 84, 0.8);
 }
 
-.date-input:focus, .time-input:focus {
+.booking-input__date:focus, .booking-input__time:focus {
     border-color: rgba(240, 84, 84, 1);
     outline: none;
 }
 
-.city-ico {
+.booking-ico__city {
     position: relative;
     display: block;
     margin-right: 10px;
@@ -323,7 +323,7 @@ img {
     cursor: pointer;
 }
 
-.city-ico::after {
+.booking-ico__city::after {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -339,22 +339,22 @@ img {
     transition: 0.3s linear;
 }
 
-.city-input:checked + .city-ico::after {
+.booking-input__city:checked + .booking-ico__city::after {
     opacity: 1;
     background-color: rgba(240, 84, 84, 0.6);
     border: 1px solid rgba(240, 84, 84, 0.6);
 }
 
-.city-input:hover + .city-ico::after {
+.booking-input__city:hover + .booking-ico__city::after {
     opacity: 1;
     border: 1px solid rgba(240, 84, 84, 0.8);
 }
 
-.city-input:focus + .city-ico {
+.booking-input__city:focus + .booking-ico__city {
     border: 1px solid rgba(240, 84, 84, 1);
 }
 
-.city-input:checked:hover + .city-ico::after {
+.booking-input__city:checked:hover + .booking-ico__city::after {
     opacity: 1;
     background-color: white;
     border: 1px solid rgba(240, 84, 84, 0.8);
@@ -368,7 +368,7 @@ img {
     width: 100%;
 }
 
-.place-ico {
+.booking-ico__place {
     display: block;
     width: 20px;
     height: 30px;
@@ -379,33 +379,30 @@ img {
     text-align: center;
     padding: 9px 0;
     transition: 0.3s linear;
-    cursor: pointer;
 }
 
-.place-ico__disabled {
+.booking-ico__place__disabled {
     border: 1px solid rgba(48, 71, 94, 0.6);
     background-color: rgba(48, 71, 94, 0.3);
 }
 
-.place-input:hover + .place-ico {
+.booking-input__place:not(:disabled) + .booking-ico__place {
+    cursor: pointer;
+}
+
+.booking-input__place:not(:disabled):hover + .booking-ico__place {
     background-color: rgba(240, 84, 84, 0.3);
     border: 1px solid rgba(240, 84, 84, 1);
 }
 
-.place-input:focus + .place-ico {
+.booking-input__place:not(:disabled):focus + .booking-ico__place {
     background-color: rgba(240, 84, 84, 0.6);
     border: 1px solid rgba(240, 84, 84, 1);
 }
 
-.place-input:checked + .place-ico {
+.booking-input__place:checked + .booking-ico__place {
     background-color: rgba(240, 84, 84, 0.8);
     border: 1px solid rgba(240, 84, 84, 1);
-}
-
-.place-input:disabled:hover + .place-ico,
-.place-input:disabled:focus + .place-ico {
-    border: 1px solid rgba(48, 71, 94, 0.6);
-    background-color: rgba(48, 71, 94, 0.3);
 }
 
 .submit-button {
@@ -587,27 +584,27 @@ img {
         font-size: 14px;
     }
 
-    .booking-seats__date {
+    .booking-date {
         justify-content: space-between;
     }
 
-    .booking-seats__date .booking-seats__label {
+    .booking-date .booking-label {
         width: 45%
     }
 
-    .booking-seats__date .booking-seats__input {
+    .booking-date .booking-input {
         width: 100%;
     }
 
-    .card-poster {
+    .movie-poster {
         width: 70%;
     }
 
-    .booking-seats__city .booking-seats__label {
+    .booking-city .booking-label {
         width: 30%
     }
 
-    .place-ico {
+    .booking-ico__place {
         width: 30px;
         height: 40px;
     }
@@ -636,17 +633,17 @@ img {
 }
 
 @media screen and (min-width: 960px) {
-    .card {
+    .movie-card {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
     }
 
-    .card-poster {
+    .movie-poster {
         width: 45%;
     }
 
-    .card-info {
+    .movie-info {
         width: 50%;
     }
 
