@@ -625,13 +625,8 @@ img {
     }
 
     .movie,
-    .booking,
     .order {
-        padding: 20px 60px;
-    }
-
-    .order {
-        padding-bottom: 20px;
+        padding: 20px 40px;
     }
 
     .about-link {
@@ -658,6 +653,10 @@ img {
 
     .navigation-link {
         font-size: 14px;
+    }
+
+    .booking {
+        padding: 20px 40px;
     }
 
     .booking-date {
@@ -711,6 +710,10 @@ img {
 }
 
 @media screen and (min-width: 960px) {
+    .movie, .booking, .order {
+        padding: 20px 60px;
+    }
+
     .movie-card {
         flex-direction: row;
         align-items: flex-start;
