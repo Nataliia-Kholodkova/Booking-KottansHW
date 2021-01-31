@@ -74,7 +74,7 @@
                     <picture>
                         <source srcset="img/poster-desktop.jpg, img/poster-desktop@2x.jpg 2x"
                                 media="(min-width: 960px)"/>
-                        <img src="img/poster-mobile.jpg" alt="Poster" class="movie-poster__img"
+                        <img src="img/poster-mobile.jpg" alt="Микита Кожем'яка постер" class="movie-poster__img"
                              srcset="img/poster-mobile@2x.jpg"/>
                     </picture>
                     <div class="movie-info__description">
@@ -133,12 +133,12 @@
                 <fieldset class="booking-date">
                     <legend class="form-header">День та час сеансу:</legend>
                     <label class="booking-label">
-                        <input type="date" value="2021-01-30" class="booking-input booking-input__date"/>
+                        <input type="date" value="2021-01-30" class="booking-input booking-input__date" name="date"/>
                     </label>
                     <label class="booking-label">
-                        <select class="booking-input booking-input__time" tabindex="1">
+                        <select class="booking-input booking-input__time" tabindex="0" >
                             <option value="10:00">10:00</option>
-                            <option value="13:00">13:00</option>
+                            <option value="13:00">13:00</option>name="time"
                             <option value="16:00">16:00</option>
                             <option value="19:00">19:00</option>
                         </select>
@@ -204,6 +204,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="1 1"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">1</span>
                             <span class="visually-hidden">1 ряд 1 місце</span>
@@ -215,6 +216,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="1 2"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -230,6 +232,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="1 3"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -245,6 +248,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="1 4"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">4</span>
                             <span class="visually-hidden">1 ряд 4 місце</span>
@@ -256,6 +260,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="1 5"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">5</span>
                             <span class="visually-hidden">1 ряд 5 місце</span>
@@ -267,6 +272,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="1 6"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">6</span>
                             <span class="visually-hidden">1 ряд 6 місце</span>
@@ -278,6 +284,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="1 7"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">7</span>
                             <span class="visually-hidden">1 ряд 7 місце</span>
@@ -289,6 +296,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="1 8"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">8</span>
                             <span class="visually-hidden">1 ряд 8 місце</span>
@@ -300,6 +308,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="1 9"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">9</span>
                             <span class="visually-hidden">1 ряд 9 місце</span>
@@ -311,6 +320,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="1 10"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">10</span>
                             <span class="visually-hidden">1 ряд 10 місце</span>
@@ -327,6 +337,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="2 1"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">1</span>
                             <span class="visually-hidden">2 ряд 1 місце</span>
@@ -338,6 +349,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="2 2"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">2</span>
                             <span class="visually-hidden">2 ряд 2 місце</span>
@@ -349,6 +361,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="2 3"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">3</span>
                             <span class="visually-hidden">2 ряд 3 місце</span>
@@ -360,6 +373,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="2 4"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -375,6 +389,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="2 5"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -390,6 +405,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="2 6"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -405,6 +421,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="2 7"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">7</span>
                             <span class="visually-hidden">2 ряд 7 місце</span>
@@ -416,6 +433,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="2 8"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">8</span>
                             <span class="visually-hidden">2 ряд 8 місце</span>
@@ -427,6 +445,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="2 9"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">9</span>
                             <span class="visually-hidden">2 ряд 9 місце</span>
@@ -438,6 +457,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="2 10"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">10</span>
                             <span class="visually-hidden">2 ряд 10 місце</span>
@@ -454,6 +474,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="3 1"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -469,6 +490,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="3 2"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">2</span>
                             <span class="visually-hidden">3 ряд 2 місце</span>
@@ -480,6 +502,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="3 3"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">3</span>
                             <span class="visually-hidden">3 ряд 3 місце</span>
@@ -491,6 +514,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="3 4"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">4</span>
                             <span class="visually-hidden">3 ряд 4 місце</span>
@@ -502,6 +526,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="3 5"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">5</span>
                             <span class="visually-hidden">3 ряд 5 місце</span>
@@ -513,6 +538,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="3 6"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -528,6 +554,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="3 7"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -543,6 +570,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="3 8"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -558,6 +586,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="3 9"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -573,6 +602,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="3 10"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">10</span>
                             <span class="visually-hidden">3 ряд 10 місце</span>
@@ -584,6 +614,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="3 11"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">11</span>
                             <span class="visually-hidden">3 ряд 11 місце</span>
@@ -595,6 +626,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="3 12"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">12</span>
                             <span class="visually-hidden">3 ряд 12 місце</span>
@@ -606,6 +638,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="3 13"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">13</span>
                             <span class="visually-hidden">3 ряд 13 місце</span>
@@ -617,6 +650,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="3 14"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">14</span>
                             <span class="visually-hidden">3 ряд 14 місце</span>
@@ -633,6 +667,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 1"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">1</span>
                             <span class="visually-hidden">4 ряд 1 місце</span>
@@ -644,6 +679,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 2"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">2</span>
                             <span class="visually-hidden">4 ряд 2 місце</span>
@@ -655,6 +691,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 3"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">3</span>
                             <span class="visually-hidden">4 ряд 3 місце</span>
@@ -666,6 +703,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 4"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">4</span>
                             <span class="visually-hidden">4 ряд 4 місце</span>
@@ -677,6 +715,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 5"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">5</span>
                             <span class="visually-hidden">4 ряд 5 місце</span>
@@ -688,6 +727,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 6"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">6</span>
                             <span class="visually-hidden">4 ряд 6 місце</span>
@@ -699,6 +739,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 7"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">7</span>
                             <span class="visually-hidden">4 ряд 7 місце</span>
@@ -710,6 +751,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 8"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">8</span>
                             <span class="visually-hidden">4 ряд 8 місце</span>
@@ -721,6 +763,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 9"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">9</span>
                             <span class="visually-hidden">4 ряд 9 місце</span>
@@ -732,6 +775,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 10"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">10</span>
                             <span class="visually-hidden">4 ряд 10 місце</span>
@@ -743,6 +787,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 11"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">11</span>
                             <span class="visually-hidden">4 ряд 11 місце</span>
@@ -754,6 +799,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 12"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">12</span>
                             <span class="visually-hidden">4 ряд 12 місце</span>
@@ -765,6 +811,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 13"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">13</span>
                             <span class="visually-hidden">4 ряд 13 місце</span>
@@ -776,6 +823,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="4 14"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">14</span>
                             <span class="visually-hidden">4 ряд 14 місце</span>
@@ -792,6 +840,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="5 1"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">1</span>
                             <span class="visually-hidden">5 ряд 1 місце</span>
@@ -803,6 +852,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="5 2"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">2</span>
                             <span class="visually-hidden">5 ряд 2 місце</span>
@@ -814,6 +864,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="5 3"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">3</span>
                             <span class="visually-hidden">5 ряд 3 місце</span>
@@ -825,6 +876,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="5 4"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">4</span>
                             <span class="visually-hidden">5 ряд 4 місце</span>
@@ -836,6 +888,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="5 5"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">5</span>
                             <span class="visually-hidden">5 ряд 5 місце</span>
@@ -847,6 +900,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="5 6"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -862,6 +916,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="5 7"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -877,6 +932,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="5 8"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">8</span>
                             <span class="visually-hidden">5 ряд 8 місце</span>
@@ -888,6 +944,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="5 9"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -903,6 +960,7 @@
                                     data-available="0"
                                     data-price="100"
                                     value="5 10"
+                                    name="place"
                                     disabled
                             />
                             <span
@@ -918,6 +976,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="5 11"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">11</span>
                             <span class="visually-hidden">5 ряд 11 місце</span>
@@ -929,6 +988,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="5 12"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">12</span>
                             <span class="visually-hidden">5 ряд 12 місце</span>
@@ -940,6 +1000,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="5 13"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">13</span>
                             <span class="visually-hidden">5 ряд 13 місце</span>
@@ -951,6 +1012,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="5 14"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">14</span>
                             <span class="visually-hidden">5 ряд 14 місце</span>
@@ -967,6 +1029,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 1"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">1</span>
                             <span class="visually-hidden">6 ряд 1 місце</span>
@@ -978,6 +1041,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 2"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">2</span>
                             <span class="visually-hidden">6 ряд 2 місце</span>
@@ -989,6 +1053,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 3"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">3</span>
                             <span class="visually-hidden">6 ряд 3 місце</span>
@@ -1000,6 +1065,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 4"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">4</span>
                             <span class="visually-hidden">6 ряд 4 місце</span>
@@ -1011,6 +1077,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 5"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">5</span>
                             <span class="visually-hidden">6 ряд 5 місце</span>
@@ -1022,6 +1089,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 6"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">6</span>
                             <span class="visually-hidden">6 ряд 6 місце</span>
@@ -1033,6 +1101,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 7"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">7</span>
                             <span class="visually-hidden">6 ряд 7 місце</span>
@@ -1044,6 +1113,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 8"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">8</span>
                             <span class="visually-hidden">6 ряд 8 місце</span>
@@ -1055,6 +1125,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 9"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">9</span>
                             <span class="visually-hidden">6 ряд 9 місце</span>
@@ -1066,6 +1137,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 10"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">10</span>
                             <span class="visually-hidden">6 ряд 0 місце</span>
@@ -1077,6 +1149,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 11"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">11</span>
                             <span class="visually-hidden">6 ряд 11 місце</span>
@@ -1088,6 +1161,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 12"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">12</span>
                             <span class="visually-hidden">6 ряд 12 місце</span>
@@ -1099,6 +1173,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 13"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">13</span>
                             <span class="visually-hidden">6 ряд 13 місце</span>
@@ -1110,6 +1185,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="6 14"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">14</span>
                             <span class="visually-hidden">6 ряд 14 місце</span>
@@ -1126,6 +1202,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 1"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">1</span>
                             <span class="visually-hidden">7 ряд 1 місце</span>
@@ -1137,6 +1214,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 2"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">2</span>
                             <span class="visually-hidden">7 ряд 2 місце</span>
@@ -1148,6 +1226,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 3"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">3</span>
                         </label>
@@ -1158,6 +1237,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 4"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">4</span>
                         </label>
@@ -1168,6 +1248,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 5"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">5</span>
                         </label>
@@ -1178,6 +1259,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 6"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">6</span>
                         </label>
@@ -1188,6 +1270,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 7"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">7</span>
                         </label>
@@ -1198,6 +1281,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 8"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">8</span>
                         </label>
@@ -1208,6 +1292,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 9"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">9</span>
                         </label>
@@ -1218,6 +1303,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 10"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">10</span>
                         </label>
@@ -1228,6 +1314,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 11"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">11</span>
                         </label>
@@ -1238,6 +1325,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 12"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">12</span>
                         </label>
@@ -1248,6 +1336,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 13"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">13</span>
                         </label>
@@ -1258,6 +1347,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="7 14"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">14</span>
                         </label>
@@ -1273,6 +1363,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="8 1"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">1</span>
                             <span class="visually-hidden">8 ряд 1 місце</span>
@@ -1284,6 +1375,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="8 2"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">2</span>
                             <span class="visually-hidden">8 ряд 2 місце</span>
@@ -1295,6 +1387,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="8 3"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">3</span>
                             <span class="visually-hidden">8 ряд 3 місце</span>
@@ -1306,6 +1399,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="8 4"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">4</span>
                             <span class="visually-hidden">8 ряд 4 місце</span>
@@ -1317,6 +1411,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="8 5"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">5</span>
                             <span class="visually-hidden">8 ряд 5 місце</span>
@@ -1328,6 +1423,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="8 6"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">6</span>
                             <span class="visually-hidden">8 ряд 6 місце</span>
@@ -1339,6 +1435,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="8 7"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">7</span>
                             <span class="visually-hidden">8 ряд 7 місце</span>
@@ -1350,6 +1447,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="8 8"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">8</span>
                             <span class="visually-hidden">8 ряд 8 місце</span>
@@ -1361,6 +1459,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="8 9"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">9</span>
                             <span class="visually-hidden">8 ряд 9 місце</span>
@@ -1371,7 +1470,9 @@
                                     class="booking-input booking-input__place visually-hidden"
                                     data-available="1"
                                     data-price="100"
-                                    value="8 10"/>
+                                    value="8 10"
+                                    name="place"
+                            />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">10</span>
                             <span class="visually-hidden">8 ряд 10 місце</span>
                         </label>
@@ -1381,7 +1482,9 @@
                                     class="booking-input booking-input__place visually-hidden"
                                     data-available="1"
                                     data-price="100"
-                                    value="8 11"/>
+                                    value="8 11"
+                                    name="place"
+                            />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">11</span>
                             <span class="visually-hidden">8 ряд 11 місце</span>
                         </label>
@@ -1391,7 +1494,9 @@
                                     class="booking-input booking-input__place visually-hidden"
                                     data-available="1"
                                     data-price="100"
-                                    value="8 12"/>
+                                    value="8 12"
+                                    name="place"
+                            />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">12</span>
                             <span class="visually-hidden">8 ряд 12 місце</span>
                         </label>
@@ -1401,7 +1506,9 @@
                                     class="booking-input booking-input__place visually-hidden"
                                     data-available="1"
                                     data-price="100"
-                                    value="8 13"/>
+                                    value="8 13"
+                                    name="place"
+                            />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">13</span>
                             <span class="visually-hidden">8 ряд 13 місце</span>
                         </label>
@@ -1412,6 +1519,7 @@
                                     data-available="1"
                                     data-price="100"
                                     value="8 14"
+                                    name="place"
                             />
                             <span class="booking-ico booking-ico__place" aria-hidden="true">14</span>
                             <span class="visually-hidden">8 ряд 14 місце</span>
