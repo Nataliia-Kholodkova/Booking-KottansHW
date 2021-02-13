@@ -136,10 +136,9 @@
                         <input type="date" value="2021-01-30" class="booking-input booking-input__date" name="date"/>
                     </label>
                     <label class="booking-label">
-                        <select class="booking-input booking-input__time" tabindex="0">
-                            <option value="10:00">10:00</option>
+                        <select class="booking-input booking-input__time" tabindex="1" name="time">
+                            <option value="10:00" selected>10:00</option>
                             <option value="13:00">13:00</option>
-                            name="time"
                             <option value="16:00">16:00</option>
                             <option value="19:00">19:00</option>
                         </select>
@@ -148,13 +147,13 @@
                 <fieldset class="booking-city">
                     <legend class="form-header">Ваше місто:</legend>
                     <label class="booking-label">
-                        <input type="radio" class="booking-input booking-input__city visually-hidden" value="Kyiv"
+                        <input type="radio" class="booking-input booking-input__city visually-hidden" value="Київ"
                                name="city" checked/>
                         <span class="booking-ico booking-ico__city"></span>
                         <span class="booking-name booking-city__name">Київ</span>
                     </label>
                     <label class="booking-label">
-                        <input type="radio" class="booking-input booking-input__city visually-hidden" value="Lviv"
+                        <input type="radio" class="booking-input booking-input__city visually-hidden" value="Львів"
                                name="city"/>
                         <span class="booking-ico booking-ico__city"></span>
                         <span class="booking-name booking-city__name">Львів</span>
@@ -166,19 +165,19 @@
                         <span class="booking-name booking-city__name">Одеса</span>
                     </label>
                     <label class="booking-label">
-                        <input type="radio" class="booking-input booking-input__city visually-hidden" value="Dnipro"
+                        <input type="radio" class="booking-input booking-input__city visually-hidden" value="Дніпро"
                                name="city"/>
                         <span class="booking-ico booking-ico__city"></span>
                         <span class="booking-name booking-city__name">Дніпро</span>
                     </label>
                     <label class="booking-label">
-                        <input type="radio" class="booking-input booking-input__city visually-hidden" value="Kharkiv"
+                        <input type="radio" class="booking-input booking-input__city visually-hidden" value="Харків"
                                name="city"/>
                         <span class="booking-ico booking-ico__city"></span>
                         <span class="booking-name booking-city__name">Харків</span>
                     </label>
                     <label class="booking-label">
-                        <input type="radio" class="booking-input booking-input__city visually-hidden" value="Kharkiv"
+                        <input type="radio" class="booking-input booking-input__city visually-hidden" value="Полтава"
                                name="city"/>
                         <span class="booking-ico booking-ico__city"></span>
                         <span class="booking-name booking-city__name">Полтава</span>
@@ -1549,28 +1548,32 @@
             <h2 class="section-header order-header">Ваше замовлення</h2>
             <table class="table order-table">
                 <tr>
+                    <th class="table-header">Місто:</th>
+                    <td class="table-data city">Київ</td>
+                </tr>
+                <tr>
                     <th class="table-header">Дата:</th>
                     <td class="table-data">
-                        <time datetime="2021-01-30">30.01.2012p.</time>
+                        <time datetime="2021-01-30" class="date">30.01.2021р.</time>
                     </td>
                 </tr>
                 <tr>
                     <th class="table-header">Час:</th>
                     <td class="table-data">
-                        <time datetime="2021-01-30 13:00">13:00</time>
+                        <time datetime="2021-01-30 13:00" class="time">10:00</time>
                     </td>
                 </tr>
                 <tr>
                     <th class="table-header">Фільм:</th>
-                    <td class="table-data">Микита Кожум'яка</td>
+                    <td class="table-data title">Микита Кожум'яка</td>
                 </tr>
                 <tr>
-                    <th class="table-header">Кількість місць:</th>
-                    <td class="table-data">3</td>
+                    <th class="table-header">Mісця:</th>
+                    <td class="table-data place">Не визначено</td>
                 </tr>
                 <tr>
                     <th class="table-header">Усього:</th>
-                    <th class="table-header">300грн.</th>
+                    <th class="table-header total">0</th>
                 </tr>
             </table>
         </section>
